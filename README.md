@@ -8,8 +8,17 @@
 ## 0x01  Features
 下面是关于这个模板的特点：
 1. 封面
+
 2. 支持大部分的数学公式以及有限状态机的图绘制
-3. 问题的标题设置
+
+3. 问题的标题设置：
+
+    ```latex
+    \begin{homeworkProblem}
+    \end{homeworkProblem}
+    ```
+
+    
 
 
 ## 0x02 demo
@@ -17,7 +26,7 @@
 
     ![](/images/README/1.png)
 
-2. 问题示例(从这里开始使用原仓库的图)
+2. 问题示例
 
     ![](/images/README/2.png)
 
