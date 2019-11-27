@@ -12,6 +12,7 @@
 \usepackage[plain]{algorithm}  % 算法
 \usepackage{algpseudocode}  % 伪代码
 \usepackage[UTF8]{ctex}  % 支持中文
+\usepackage{multirow}
 
 \usetikzlibrary{automata,positioning}
 
@@ -117,6 +118,11 @@
 \newcommand{\Cov}{\mathrm{Cov}}
 \newcommand{\Bias}{\mathrm{Bias}}
 
+% 表格单元格中换行
+% 使用：\tabincell{c}{单元格内容1 \\ 单元格内容2}
+% 		- c表示居中
+%		- \\ 表示换行
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
 
 

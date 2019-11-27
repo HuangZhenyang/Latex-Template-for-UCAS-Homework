@@ -439,4 +439,19 @@
 \end{homeworkProblem}
 
 
+\begin{homeworkProblem}
+	单元格内换行示例：\\
+	
+	\begin{tabular}{|c|c|c|c|}
+		\hline 
+		方法 & 特点 & 优点 & 缺点  \\ 
+		\hline 
+		有监督学习 & \tabincell{c}{对数据进行标注，\\ 通过有监督学习的方式\\ 来检测恶意URL} & 更强的泛化能力 & \tabincell{l}{现实生活中很难获得\\ 精准的标注数据。\\ 在更多时候，我们可能\\ 只得到一小部分恶意URL\\ 和大量未标记的URL样本，\\ 缺乏足够可靠的负例样本} \\ 
+		\hline 
+		无监督学习 & 不需要对数据进行标注 & 无需标注的数据即可进行训练 & \tabincell{c}{已知恶意URL的标注信息\\ 就难以充分利用，可能\\ 无法达到令人满意的识别能力} \\
+		\hline
+	\end{tabular} 
+\end{homeworkProblem}
+
+
 \end{document}
