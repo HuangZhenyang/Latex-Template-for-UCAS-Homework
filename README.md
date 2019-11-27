@@ -25,7 +25,7 @@
     \end{homeworkProblem}
     ```
 
-4. 表格中单元格内换行：
+4. 支持表格中单元格内换行：
 
     ```latex
     % 在单元格内使用\tabincell，\tabincell代表一个单元格的内容
@@ -34,7 +34,22 @@
     \tabincell{c}{对数据进行标注，\\ 通过有监督学习的方式\\ 来检测恶意URL}
     ```
 
+5. 代码块
+	
+	```latex
+	\begin{lstlisting}[language = python, numbers=left, 
+    numberstyle=\tiny,keywordstyle=\color{blue!70},
+    commentstyle=\color{red!50!green!50!blue!50},frame=shadowbox,
+    rulesepcolor=\color{red!20!green!20!blue!20},basicstyle=\ttfamily]
+
+    代码内容：
+ def test():
+    	pass
+   
+    \end{lstlisting}
     
+   ```
+
 
 
 ## 0x02 demo
