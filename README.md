@@ -120,6 +120,4 @@
 
 ## 0x07 License
 
-Copyright (C) Huang Zhenyang (hzyhhh at foxmail dot com)
-
-License: GNU General Public License, version 2
+本仓库遵循MIT License，更多的信息请移步License文件中查看
