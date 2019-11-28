@@ -9,7 +9,8 @@
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{tikz}  % 绘图
-\usepackage[plain]{algorithm}  % 算法
+\usepackage{algorithm}  % 算法
+\usepackage{algorithmicx}
 \usepackage{algpseudocode}  % 伪代码
 \usepackage[UTF8]{ctex}  % 支持中文
 \usepackage{multirow}  % 表格多行
@@ -132,5 +133,9 @@
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
 
-
+%
+% 将算法中的\Require替换为Input，将\Ensure替换为Output
+%
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm
 

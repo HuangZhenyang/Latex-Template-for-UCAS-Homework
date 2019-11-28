@@ -187,20 +187,28 @@
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
-	Write part of \alg{Quick-Sort($list, start, end$)}
+	伪代码、算法示例，如算法\ref{alg:Reliable Negative Instances Selection}所示：
 	
-	\begin{algorithm}[]
-		\begin{algorithmic}[1]
-			\Function{Quick-Sort}{$list, start, end$}
-			\If{$start \geq end$}
-			\State{} \Return{}
-			\EndIf{}
-			\State{} $mid \gets \Call{Partition}{list, start, end}$
-			\State{} \Call{Quick-Sort}{$list, start, mid - 1$}
-			\State{} \Call{Quick-Sort}{$list, mid + 1, end$}
-			\EndFunction{}
+	\begin{algorithm}[H]
+		\begin{algorithmic}[1] %每行显示行号
+			\Require{Positive Instance Set $ P $, Unlabeled Instance Set $ U $ , Sample Ratio s.}
+			\Ensure{Reliable Negative Instance Set $ RN $.}
+			
+			\State{$set  RN = \emptyset $}
+			\State{Sample $ s $ of the instances from $ P $ as $ S $}
+			\State{Set $ P_s  = P − S$ with label $ 1 $, $ U_s = U \cup S $ with label $ -1 $}
+			\State{Train a classifier $ g $ with $ P_s $ and $ U_s $}
+			\State{Classify instances in $ U $ using $ g $, output the class-conditional-probability}
+			\State{Select a threshold $ \theta $ according to the class-conditional-probability of
+				instances in $ S $}
+			\For{$ d \in U $ do}
+			\If{$ Pr(1|d) \leq \theta, RN = RN \cup d $}
+			\EndIf
+			\EndFor
+			\State{Output RN}
 		\end{algorithmic}
-		\caption{Start of QuickSort}
+		\caption{Reliable Negative Instances Selection}
+		\label{alg:Reliable Negative Instances Selection}
 	\end{algorithm}
 \end{homeworkProblem}
 
