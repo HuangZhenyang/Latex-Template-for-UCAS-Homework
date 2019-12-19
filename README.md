@@ -2,7 +2,10 @@
 
 ---
 
+[TOC]
+
 ## 0x00 About
+
 这个仓库是从[latex-homework-template](https://github.com/jdavis/latex-homework-template#adjustable-problem-numbers)修改而来的，目的是为了适用于国科大的作业，欢迎提出您的意见和建议。
 
 
